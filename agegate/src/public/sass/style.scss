@@ -1,0 +1,188 @@
+@import "mixins";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+$red : #e74c3c ;
+$dark :  #3d3d3d;
+$blue: #6dcff6;
+
+* {
+  box-sizing:border-box;
+}
+html, body
+{
+  width:100%;
+  height:100%;
+}
+body
+{
+  padding:0;
+  margin:0;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Open Sans', sans-serif;
+  // transition:all 0.4s ease;
+  // transform:scale(1);
+}
+.clearfix
+{
+  clear:both;
+}
+/*
+ * Links
+ */
+a
+{
+  cursor: pointer;
+  display:block;
+}
+
+/* 
+ * Layout
+ */
+#age-gate-wrapper
+{
+  background: #efefef;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:all 0.4s ease;
+  opacity:1;
+  visibility: visible;
+  &.passed
+  {
+    opacity:0;
+    visibility: hidden;
+  }
+}
+#age-gate
+{
+  background: #fff;
+  margin: 0 auto;
+  width: 40%;
+  padding: 2%;
+  box-shadow: 0 0 25px -5px #bebebe;
+  border-radius: 10px ;
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  top: 10px;
+}
+#age-gate-form
+{
+  h4
+  {
+    font-size: 14px;
+    color: #000;
+    letter-spacing: 1px;
+    margin:0.5em 0;
+  }
+  &.age-form
+  {
+    margin:0;
+    table
+    {
+      width:71%;
+      margin:0 auto;
+    }
+    .td-day { width:26%; }
+    .td-month { width:26%; }
+    .td-year { width:40%; }
+    .td-divider { width:4%; }
+    .form-input
+    {
+      float:left;
+      border:0;
+      padding:0;
+      padding:.5em .2em;
+      text-align:center;
+      .day 
+      {
+
+      }
+      .month
+      {
+
+      }
+      .year
+      {
+
+      }
+      .divider
+      {
+        float:left;
+      }
+    }
+  }
+
+  label
+  {
+    display: block;
+    font-size: .85em;
+    margin-bottom: 1em;
+    color: #676767;
+    text-align: left;
+    height: 9%;
+  }
+  input[type="tel"]
+  {
+    font-size: 16px;
+    width: 95%;
+    display: block;
+    float: left;
+  }
+  input[type="submit"]
+  {
+    border:0;
+    outline:0;
+    // padding: 1px 15px;
+    padding: 5px 10px;
+    font-size: 9px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 1px;
+    background-color: #009bc9;
+    color:#FFFFFF;
+    cursor:pointer;
+    margin: 1em 0;
+    &:hover, &:active, &:focus
+    {
+      // outline: 0;
+      // background: lighten($blue , 15%);
+      // color: darken( $blue , 35%);
+    }
+  }
+  .error
+  {
+    background: #e58692;
+    border: 1px solid #8c5159;
+    padding: .5em 0;
+    transition:all 0.4s ease;
+    opacity: 0;
+    visibility: hidden;
+    p
+    {
+      color: #fff;
+      word-wrap: break-word;
+      font-weight: 600;
+      font-size: 11px;
+    }
+    &.visible
+    {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+.message
+{
+  font-size: 1.25em;
+  animation: fadeIn;
+}

@@ -1,0 +1,28 @@
+{
+  "name": "one_helper",
+  "version": "0.0.1",
+  "description": "ONE Helper",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.9.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "del": "^3.0.0",
+    "gulp": "^3.9.0",
+    "gulp-add-src": "^0.2.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-delete-file": "^1.0.2",
+    "gulp-html-compile": "^1.0.5",
+    "gulp-ignore": "^2.0.2",
+    "gulp-prettyerror": "^1.1.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.9.1",
+    "gulp-uglify": "^2.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
