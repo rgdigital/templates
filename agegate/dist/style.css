@@ -115,18 +115,23 @@ a {
   #age-gate-wrapper.passed {
     opacity: 0;
     visibility: hidden; }
-
-#age-gate {
-  background: #fff;
-  margin: 0 auto;
-  width: 40%;
-  padding: 2%;
-  box-shadow: 0 0 25px -5px #bebebe;
-  border-radius: 10px;
-  display: block;
-  opacity: 1;
-  visibility: visible;
-  top: 10px; }
+  #age-gate-wrapper #age-gate {
+    background: #fff;
+    margin: 0 auto;
+    width: 40%;
+    padding: 2%;
+    box-shadow: 0 0 25px -5px #bebebe;
+    border-radius: 10px;
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    top: 10px; }
+    #age-gate-wrapper #age-gate .logo {
+      width: 50%;
+      padding-top: 23%;
+      margin: 1em auto;
+      background-image: url("im_oath_logo.svg");
+      background-repeat: no-repeat; }
 
 #age-gate-form h4 {
   font-size: 14px;
@@ -182,15 +187,15 @@ a {
   background-color: #009bc9;
   color: #FFFFFF;
   cursor: pointer;
-  margin: 1em 0; }
+  margin: 1em 0 0 0; }
 
 #age-gate-form .error {
   background: #e58692;
   border: 1px solid #8c5159;
-  padding: .5em 0;
   transition: all 0.4s ease;
   opacity: 0;
-  visibility: hidden; }
+  visibility: hidden;
+  margin-top: 1em; }
   #age-gate-form .error p {
     color: #fff;
     word-wrap: break-word;
